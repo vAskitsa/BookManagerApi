@@ -6,12 +6,12 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using BooManagerApi.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Certificate;
 
 namespace BooManagerApi
 {
     public class Startup
     {
-
         readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         public Startup(IConfiguration configuration)
@@ -21,7 +21,6 @@ namespace BooManagerApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -41,6 +40,10 @@ namespace BooManagerApi
             services.AddDbContext<BookContext>(opt =>
                                               opt.UseInMemoryDatabase("BookList"));
 
+            services.AddAuthentication(
+        CertificateAuthenticationDefaults.AuthenticationScheme)
+        .AddCertificate();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -53,11 +56,9 @@ namespace BooManagerApi
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
