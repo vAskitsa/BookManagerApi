@@ -21,14 +21,12 @@ namespace BooManagerApi.Controllers
             _context = context;
         }
 
-        // GET: api/Books
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Book>>> GetBookItems()
         {
             return await _context.BookItems.ToListAsync();
         }
 
-        // GET: api/Books/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Book>> GetBook(int id)
         {
@@ -42,8 +40,6 @@ namespace BooManagerApi.Controllers
             return book;
         }
 
-        // PUT: api/Books/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBook(int id, Book book)
         {
@@ -73,8 +69,6 @@ namespace BooManagerApi.Controllers
             return NoContent();
         }
 
-        // POST: api/Books
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(Book book)
         {
@@ -84,7 +78,6 @@ namespace BooManagerApi.Controllers
             return CreatedAtAction("GetBook", new { id = book.ID }, book);
         }
 
-        // DELETE: api/Books/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook(int id)
         {

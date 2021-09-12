@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tgaVTSrTRwD9Dfopqp3cQbvl7k03dIfYOtvQjumNYl4j7/yC6J2+aAcRrnnYCEHcT6Upeod/M7VlTzMFAcwcJg==",
+  "dgSpecHash": "/CPrwexcQQdzivIl8QYJ4Zmw8z8dOWHJfNUDssQu8G1F4vtgo9vw453Y+rAAG1Qn385TdzpflD6Aw/hA2jnLtQ==",
   "success": true,
-  "projectFilePath": "C:\\buutti\\BookInventory\\Back\\BooManagerApi\\BooManagerApi.csproj",
+  "projectFilePath": "C:\\buutti\\BookInventory\\Back\\BooManagerApi\\BookManagerApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Perttu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Perttu\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

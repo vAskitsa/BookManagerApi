@@ -7366,9 +7366,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\buutti\\BookInventory\\Back\\BooManagerApi\\BooManagerApi.csproj",
-      "projectName": "BooManagerApi",
-      "projectPath": "C:\\buutti\\BookInventory\\Back\\BooManagerApi\\BooManagerApi.csproj",
+      "projectUniqueName": "C:\\buutti\\BookInventory\\Back\\BooManagerApi\\BookManagerApi.csproj",
+      "projectName": "BookManagerApi",
+      "projectPath": "C:\\buutti\\BookInventory\\Back\\BooManagerApi\\BookManagerApi.csproj",
       "packagesPath": "C:\\Users\\Perttu\\.nuget\\packages\\",
       "outputPath": "C:\\buutti\\BookInventory\\Back\\BooManagerApi\\obj\\",
       "projectStyle": "PackageReference",
